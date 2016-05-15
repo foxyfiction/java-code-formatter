@@ -1,6 +1,5 @@
 /**
- * Formatter
- * complete set of tools for formatting Java code
- * @author a.kondyurina
+ * formatter package
+ * set of tools to format Java code
  */
 package it.sevenbits.javacodeformatter.formatter;

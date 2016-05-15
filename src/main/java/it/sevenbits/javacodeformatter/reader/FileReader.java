@@ -1,7 +1,21 @@
 package it.sevenbits.javacodeformatter.reader;
 
 /**
- * Created by alex on 12.05.16.
+ * FileReader class for reading characters from file
  */
-public class FileReader {
+public class FileReader implements IReader {
+
+
+    public FileReader() {
+
+    }
+
+    public Character read() throws ReaderException {
+        return null;
+    }
+
+    public void close() throws ReaderException {
+
+    }
+
 }

@@ -1,7 +1,8 @@
 package it.sevenbits.javacodeformatter.formatter;
 
 /**
- * Created by alex on 12.05.16.
+ * FormatterException
  */
-public class FormatterException {
+public class FormatterException extends Exception {
+
 }

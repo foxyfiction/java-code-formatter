@@ -1,7 +1,15 @@
 package it.sevenbits.javacodeformatter.reader;
 
 /**
- * Created by alex on 12.05.16.
+ * ReaderException class provides ReaderException
  */
-public class ReaderException {
+public class ReaderException extends Exception {
+    /**
+     *
+     * @param exception
+     */
+    public ReaderException(final Exception exception) {
+        super(exception.getMessage(), exception.getCause());
+    }
+
 }

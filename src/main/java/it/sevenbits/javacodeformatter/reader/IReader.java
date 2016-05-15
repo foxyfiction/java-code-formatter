@@ -1,7 +1,27 @@
 package it.sevenbits.javacodeformatter.reader;
 
 /**
- * Created by alex on 12.05.16.
+ * IReader interface
+ * describe classes for reading characters
  */
-public class IReader {
+public interface IReader {
+    /**
+     * Read one symbol from input stream
+     * @return received symbol
+     * @throws ReaderException
+     */
+    Character read() throws ReaderException;
+
+    /**
+     * Proof end of stream
+     * @return boolean value. false -- not end, true -- end of stream
+     */
+    public Boolean isEnd();
+
+    /**
+     * Close input stream
+     * @throws ReaderException
+     */
+    void close() throws ReaderException;
+
 }
